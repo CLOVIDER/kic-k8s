@@ -1,1 +1,25 @@
 
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: clovider-api
+  labels:
+    app: clovider-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: clovider-app
+  template:
+    metadata:
+      labels:
+        app: clovider-app
+    spec:
+      containers:
+      - image: 
+        name: 
+        ports:
+        - containerPort: 8080
+          name: http
+      imagePullSecrets:
+      - name: kic-registry
