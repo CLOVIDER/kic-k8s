@@ -1,4 +1,3 @@
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -22,4 +21,4 @@ spec:
         - containerPort: 8080
           name: http
       imagePullSecrets:
-      - name: kic-registry
+      - name: clovider-registry
