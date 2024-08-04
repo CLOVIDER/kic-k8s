@@ -4,7 +4,7 @@ metadata:
   name: clovider-fe-service
 spec:
   selector:
-    app: clovider-fe
+    app: clovider-app
   ports:
     - protocol: TCP
       port: 3000
