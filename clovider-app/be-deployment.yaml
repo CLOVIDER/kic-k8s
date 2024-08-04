@@ -21,4 +21,4 @@ spec:
         - containerPort: 8080
           name: http
       imagePullSecrets:
-      - name: clovider-registry
+      - name: clovider-registry
