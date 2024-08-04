@@ -20,5 +20,10 @@ spec:
         ports:
         - containerPort: 8080
           name: http
+      env:
+        - name: SPRING_REDIS_HOST
+          value: "redis-service"
+        - name: SPRING_REDIS_PORT
+          value: "6379"
       imagePullSecrets:
       - name: clovider-registry
