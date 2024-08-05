@@ -1,4 +1,4 @@
-apiVersion: apps/v1 
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: clovider-api
@@ -15,7 +15,7 @@ spec:
         app: clovider-app
     spec:
       containers:
-        - image: 'kids-in-company.kr-central-2.kcr.dev/clovider-registry/clovider-be-app:5febe158dd670ddc1b4e6491ffc8d36cb1eb58ba'
+        - image: 'kids-in-company.kr-central-2.kcr.dev/clovider-registry/clovider-be-app:1a75c59cbb1d004a9f41797ea7801638ca3bbc71'
           name: clovider-be-app
           ports:
             - containerPort: 8080
