@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: clovider-be-service
+  namespace: clovider
 spec:
   selector:
     app: clovider-api
