@@ -2,18 +2,17 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: clovider-api
-  labels:
-    app: clovider-app
+  namespace: clovider
 spec:
   replicas: 3
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: clovider-app
+      app: clovider-api
   template:
     metadata:
       labels:
-        app: clovider-app
+        app: clovider-api
     spec:
       containers:
         - image: 'kids-in-company.kr-central-2.kcr.dev/clovider-registry/clovider-be-app:c1404d4f668f48ac279107ad1a6f1ebb6823b80f'
