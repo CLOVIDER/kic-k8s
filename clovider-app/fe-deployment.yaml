@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: clovider-fe
+  name: clovider-fe-deployment
   namespace: clovider
 spec:
   replicas: 3
