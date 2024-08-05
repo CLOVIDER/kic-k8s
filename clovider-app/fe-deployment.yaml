@@ -2,8 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: clovider-fe
-  labels:
-    app: clovider-app
+  namespace: clovider
 spec:
   replicas: 3
   revisionHistoryLimit: 3
