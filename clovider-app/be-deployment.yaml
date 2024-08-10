@@ -15,15 +15,15 @@ spec:
         app: clovider-api
     spec:
       containers:
-        - image: 'kids-in-company.kr-central-2.kcr.dev/clovider-registry/clovider-be-app:71d163b911fb423aba3732afaab1d0be2f4531c8'
-          name: clovider-be-app
-          ports:
-            - containerPort: 8080
-              name: http
-          env:
-            - name: SPRING_REDIS_HOST
-              value: "redis"
-            - name: SPRING_REDIS_PORT
-              value: "6379"
+      - image: kids-in-company.kr-central-2.kcr.dev/clovider-registry/clovider-be-app:617e78b7a8786db645ac1f2a839baad3985592f8
+        name: clovider-be-app
+        ports:
+        - containerPort: 8080
+          name: http
+        env:
+        - name: SPRING_REDIS_HOST
+          value: "redis"
+        - name: SPRING_REDIS_PORT
+          value: "6379"
       imagePullSecrets:
-        - name: clovider-registry
+      - name: clovider-registry
