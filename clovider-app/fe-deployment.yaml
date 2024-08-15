@@ -15,7 +15,7 @@ spec:
         app: clovider-app
     spec:
       containers:
-      - image: kids-in-company.kr-central-2.kcr.dev/clovider-registry/clovider-fe-app:85c65c9501275e3dab9cb7afec1aba421d60c78c
+      - image: kids-in-company.kr-central-2.kcr.dev/clovider-registry/clovider-fe-app:547a7a57457f78ba5c622e4e1fc5a57b9a4cb940
         name: clovider-fe-app
         ports:
         - containerPort: 3000
