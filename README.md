@@ -23,7 +23,7 @@
 >디케이테크인 내부의 공정하고 투명한 사내 어린이집 인원 배정을 위해 어린이집 모집과 추첨을 자동화한 서비스입니다.
 
 ## 🛠️ 기술 스택
-<img width="427" alt="Screenshot 2024-08-18 at 7 39 32 PM" src="https://github.com/user-attachments/assets/2bc706b8-bb12-43c0-89eb-343fc098d156">
+<img width="559" alt="Screenshot 2024-08-18 at 7 45 10 PM" src="https://github.com/user-attachments/assets/f05610e5-703f-4bd6-a138-5929d84f7262">
 
 
 ## 📝 ERD
