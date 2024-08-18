@@ -24,15 +24,32 @@
 
 ## 🛠️ 기술 스택
 <img width="559" alt="Screenshot 2024-08-18 at 7 45 10 PM" src="https://github.com/user-attachments/assets/f05610e5-703f-4bd6-a138-5929d84f7262">
+DNS: 가비아 도메인(http://kidsincompany.shop/)
+Subnet: Private/Public Subnet으로 나누어 관리
+Kubernetes Engine: 프론트와 백엔드 서비스 및 MySQL, redis와 같은 DB를 파드에서 관리
+Load Balancer: 프론트, 백엔드 서비스를 Nginx Ingress와 묶어서 외부로 라우팅
+Virtual Machine: Bastion, Nat, 서비스 Runner
+Lambda: 추첨 확률 예측을 위한 함수 실행
+AWS API GateWay: Lambda와 Spring 서비스를 연결해주는 Gateway
+S3: 이미지 및 도큐먼트 저장소
+ArgoCD: 서비스 배포 도구 쿠버네티스 파드에서 실행
+Prometheus, Grafana: 모니터링 도구
+
+## 📝 배포방식
+
+[CI]
+전형적인 Docker image Build 방식을 따르고 있습니다. 빌드된 이미지는 카카오 레지스트리에 tag와 함께 올라가고 있습니다.
+FrontEND: npm 방식으로 빌드 및 이미지 업로드
+BackEND: JIB 방식으로 빌드 및 이미지 업로드
+
+[CD]
+FrontEND, BackEND 동일하게 빌드된 이미지가 레지스트리에 올라가면 ArgoCD에서 Trigger(deployment.yaml)를 받아 
+ArgoCD에 replicaset 3개로 배포
+<img width="1031" alt="Screenshot 2024-08-18 at 8 48 18 PM" src="https://github.com/user-attachments/assets/09ac76d4-e586-488a-88e7-f3dd0bc7905d">
 
 
-## 📝 ERD
+## 🌱 쿠버네티스
 
-![키즈인컴퍼니 ERD](https://github.com/user-attachments/assets/56cefb42-935d-4ce6-b79b-7cd8f2e05a73)
-
-## 🌱 서비스 아키텍처
-
-<img width="1097" alt="image" src="https://github.com/user-attachments/assets/fc729e9e-baf9-4d7d-9a8b-235083346fef">
 
 ## 도전한 사항
 
