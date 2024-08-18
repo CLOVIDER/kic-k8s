@@ -26,14 +26,23 @@
 <img width="559" alt="Screenshot 2024-08-18 at 7 45 10 PM" src="https://github.com/user-attachments/assets/f05610e5-703f-4bd6-a138-5929d84f7262">
 
 DNS: 가비아 도메인(http://kidsincompany.shop/)
+
 Subnet: Private/Public Subnet으로 나누어 관리
+
 Kubernetes Engine: 프론트와 백엔드 서비스 및 MySQL, redis와 같은 DB를 파드에서 관리
+
 Load Balancer: 프론트, 백엔드 서비스를 Nginx Ingress와 묶어서 외부로 라우팅
+
 Virtual Machine: Bastion, Nat, 서비스 Runner
+
 Lambda: 추첨 확률 예측을 위한 함수 실행
+
 AWS API GateWay: Lambda와 Spring 서비스를 연결해주는 Gateway
+
 S3: 이미지 및 도큐먼트 저장소
+
 ArgoCD: 서비스 배포 도구 쿠버네티스 파드에서 실행
+
 Prometheus, Grafana: 모니터링 도구
 
 ## 📝 배포방식
