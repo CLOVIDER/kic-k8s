@@ -48,11 +48,13 @@ Prometheus, Grafana: 모니터링 도구
 ## 📝 배포방식
 
 [CI]
+
 전형적인 Docker image Build 방식을 따르고 있습니다. 빌드된 이미지는 카카오 레지스트리에 tag와 함께 올라가고 있습니다.
 FrontEND: npm 방식으로 빌드 및 이미지 업로드
 BackEND: JIB 방식으로 빌드 및 이미지 업로드
 
 [CD]
+
 FrontEND, BackEND 동일하게 빌드된 이미지가 레지스트리에 올라가면 ArgoCD에서 Trigger(deployment.yaml)를 받아 
 ArgoCD에 replicaset 3개로 배포
 <img width="1031" alt="Screenshot 2024-08-18 at 8 48 18 PM" src="https://github.com/user-attachments/assets/09ac76d4-e586-488a-88e7-f3dd0bc7905d">
