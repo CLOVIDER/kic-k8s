@@ -24,6 +24,7 @@
 
 ## 🛠️ 기술 스택
 <img width="559" alt="Screenshot 2024-08-18 at 7 45 10 PM" src="https://github.com/user-attachments/assets/f05610e5-703f-4bd6-a138-5929d84f7262">
+
 DNS: 가비아 도메인(http://kidsincompany.shop/)
 Subnet: Private/Public Subnet으로 나누어 관리
 Kubernetes Engine: 프론트와 백엔드 서비스 및 MySQL, redis와 같은 DB를 파드에서 관리
