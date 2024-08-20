@@ -15,7 +15,7 @@ spec:
         app: clovider-api
     spec:
       containers:
-      - image: kids-in-company.kr-central-2.kcr.dev/clovider-registry/clovider-be-app:35c180fd02cf1c5a605aa83773518608d498a5e2
+      - image: kids-in-company.kr-central-2.kcr.dev/clovider-registry/clovider-be-app:65a39c37c6aabda2c61110aa94034d21e4a1093d
         name: clovider-be-app
         ports:
         - containerPort: 8080
